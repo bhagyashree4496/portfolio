@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 p-4">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-white font-bold text-lg">
+        <div className="text-white font-bold text-2xl">
           <a href="#">MyPortfolio</a>
         </div>
         <div className="hidden md:flex space-x-8">

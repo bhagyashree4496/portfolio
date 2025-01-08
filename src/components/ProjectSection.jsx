@@ -5,6 +5,8 @@ import youtube from "../assets/youtube.PNG";
 import levora from "../assets/levora.PNG";
 import travel from "../assets/travel.PNG";
 import todo from "../assets/todo.PNG";
+import shop from "../assets/1.PNG";
+import Doc from "../assets/doc.PNG";
 // Project Card Component
 const ProjectCard = ({ image, title, description, link, technologies }) => {
   return (
@@ -40,11 +42,11 @@ const ProjectCard = ({ image, title, description, link, technologies }) => {
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Ecommerce Website",
+      title: "ShopSphere",
       description:
-        "A plant market e-commerce website offers a variety of plants and gardening supplies, allowing customers to browse, purchase, and have plants delivered directly to their door with ease.",
-      image: plant, // Replace with actual project image link
-      link: "https://plantmarket-bp.netlify.app/",
+        "ShopSphere is a scalable e-commerce platform built with the MERN stack, featuring secure user authentication, product management, and payment processing for a seamless shopping experience.",
+      image: shop, // Replace with actual project image link
+      link: "https://shopsphere-bp.vercel.app/",
       technologies: [
         "React",
         "NodeJs",
@@ -52,6 +54,14 @@ const ProjectsSection = () => {
         "Tailwind CSS",
         "JavaScript",
       ],
+    },
+    {
+      title: "DocAi",
+      description:
+        "DocAI for Medical Questions uses ChatGPT AI to provide accurate, real-time answers to medical queries by analyzing and interpreting medical documents, helping users access reliable health information with ease",
+      image: Doc, // Replace with actual project image link
+      link: "https://docai-taupe.vercel.app/",
+      technologies: ["React", "Tailwind CSS", "ChatGPT API"],
     },
     {
       title: "Youtube Clone",
@@ -84,6 +94,14 @@ const ProjectsSection = () => {
       image: todo, // Replace with actual project image link
       link: "https://todocrudbp.netlify.app/",
       technologies: ["ReactJs", "TailwindCSS", "Render"],
+    },
+    {
+      title: "Ecommerce UI",
+      description:
+        "A plant market e-commerce website offers a variety of plants and gardening supplies, allowing customers to browse, purchase, and have plants delivered directly to their door with ease.",
+      image: plant, // Replace with actual project image link
+      link: "https://plantmarket-bp.netlify.app/",
+      technologies: ["React", "Tailwind CSS", "JavaScript"],
     },
     // Add more projects as needed
   ];

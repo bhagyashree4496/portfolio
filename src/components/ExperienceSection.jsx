@@ -6,18 +6,29 @@ const ExperienceSection = () => {
     {
       role: "Front-End Developer",
       company: "ilaqa Technologies.",
-      duration: "Jan 2022 - Present",
+      duration: "July 2024 - Present",
       description:
         "Working on developing responsive and user-friendly web application using React. Collaborated closely with designers and to implement engaging UI/UX designs and with node deeloper for api integrations.",
       technologies: ["React", "JavaScript", "Tailwind CSS", "REST APIs"],
     },
     {
-      role: "Web Developer Intern",
+      role: "Front-End Developer",
       company: "Sixpep Technologies",
-      duration: "May 2021 - Dec 2021",
+      duration: "July 2023 - April 2024",
       description:
-        "Assisted in building and maintaining website and dashboard for Sixpep",
-      technologies: ["HTML", "CSS", "Javascript", "React"],
+        "Designed and developed the iLaqa website, focusing on responsive UI, seamless user experience, and optimized performance. Integrated REST APIs, collaborating with backend teams using Express.js and MongoDB to ensure smooth data operations. Implemented AWS authentication and integrated Razorpay for secure and scalable user transactions. Enhanced user engagement through performance optimizations and new feature implementations. Explored Shopify & Ecwid for e-commerce integration, specifically for bulk community deals.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Express.js",
+        "MongoDB",
+        "AWS",
+        "Razorpay",
+        "Shopify",
+        "Ecwid",
+      ],
     },
     // Add more experience as needed
   ];
