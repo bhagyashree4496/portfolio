@@ -7,6 +7,7 @@ import travel from "../assets/travel.PNG";
 import todo from "../assets/todo.PNG";
 import shop from "../assets/1.PNG";
 import Doc from "../assets/doc.PNG";
+import planit from "../assets/plan.PNG";
 // Project Card Component
 const ProjectCard = ({ image, title, description, link, technologies }) => {
   return (
@@ -47,13 +48,7 @@ const ProjectsSection = () => {
         "ShopSphere is a scalable e-commerce platform built with the MERN stack, featuring secure user authentication, product management, and payment processing for a seamless shopping experience.",
       image: shop, // Replace with actual project image link
       link: "https://shopsphere-bp.vercel.app/",
-      technologies: [
-        "React",
-        "NodeJs",
-        "MongoDB",
-        "Tailwind CSS",
-        "JavaScript",
-      ],
+      technologies: ["React", "NodeJs", "MongoDB", "Tailwind CSS"],
     },
     {
       title: "DocAi",
@@ -64,12 +59,12 @@ const ProjectsSection = () => {
       technologies: ["React", "Tailwind CSS", "ChatGPT API"],
     },
     {
-      title: "Youtube Clone",
+      title: "Planit",
       description:
-        "A YouTube clone is a platform for uploading, watching, and sharing videos, with features like recommendations and search.",
-      image: youtube, // Replace with actual project image link
-      link: "https://youtubeclonebp.netlify.app/",
-      technologies: ["ReactJs", "TailwindCSS", "React Player"],
+        "A MERN stack-based To-Do app where users can sign up, log in, and manage tasks (create, edit, delete, mark as complete). It is built with React.js for the frontend, Node.js/Express.js for the backend, and MongoDB for data storage",
+      image: planit, // Replace with actual project image link
+      link: "https://planit-a4zc.vercel.app/",
+      technologies: ["React", "NodeJs", "MongoDB", "Tailwind CSS"],
     },
     {
       title: "Levora About",
@@ -79,6 +74,15 @@ const ProjectsSection = () => {
       link: "https://levoraabout-bhagya.netlify.app/",
       technologies: ["ReactJs", "TailwindCSS", "Framer Motion"],
     },
+    {
+      title: "Youtube Clone",
+      description:
+        "A YouTube clone is a platform for uploading, watching, and sharing videos, with features like recommendations and search.",
+      image: youtube, // Replace with actual project image link
+      link: "https://youtubeclonebp.netlify.app/",
+      technologies: ["ReactJs", "TailwindCSS", "React Player"],
+    },
+
     {
       title: "Travel Adviosor",
       description:
