@@ -44,7 +44,7 @@ const HeroSection = () => {
       <div className="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0 mb-6">
         {/* Phone Number */}
         <a
-          href="tel:+199731877132"
+          href="tel:+919731877132"
           className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
         >
           <FiPhoneCall size={24} />
@@ -62,9 +62,8 @@ const HeroSection = () => {
 
         {/* LinkedIn */}
         <a
-          href="https://linkedin.com/bhagyashreepatil4496"
+          href="https://www.linkedin.com/in/bhagyashreepatil4496/"
           target="_blank"
-          rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
         >
           <AiFillLinkedin size={24} />
