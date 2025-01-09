@@ -13,13 +13,25 @@ const Navbar = () => {
           <a href="#about" className="text-gray-300 hover:text-white">
             AboutMe
           </a>
-          <a href="#skill" className="text-gray-300 hover:text-white">
+          <a
+            onClick={() => setIsOpen(false)}
+            href="#skill"
+            className="text-gray-300 hover:text-white"
+          >
             Skills
           </a>
-          <a href="#experience" className="text-gray-300 hover:text-white">
+          <a
+            onClick={() => setIsOpen(false)}
+            href="#experience"
+            className="text-gray-300 hover:text-white"
+          >
             Experience
           </a>
-          <a href="#projects" className="text-gray-300 hover:text-white">
+          <a
+            onClick={() => setIsOpen(false)}
+            href="#projects"
+            className="text-gray-300 hover:text-white"
+          >
             Projects
           </a>
         </div>
@@ -56,24 +68,28 @@ const Navbar = () => {
         } overflow-hidden transition-all duration-500 ease-in-out md:hidden bg-gray-900`}
       >
         <a
+          onClick={() => setIsOpen(false)}
           href="#about"
           className="block px-4 py-4 text-gray-300 hover:text-white border-t border-gray-700"
         >
           AboutMe
         </a>
         <a
+          onClick={() => setIsOpen(false)}
           href="#skill"
           className="block px-4 py-4 text-gray-300 hover:text-white border-t border-gray-700"
         >
           Skills
         </a>
         <a
+          onClick={() => setIsOpen(false)}
           href="#experience"
           className="block px-4 py-4 text-gray-300 hover:text-white border-t border-gray-700"
         >
           Experience
         </a>
         <a
+          onClick={() => setIsOpen(false)}
           href="#projects"
           className="block px-4 py-4 text-gray-300 hover:text-white border-t border-gray-700"
         >

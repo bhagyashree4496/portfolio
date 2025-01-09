@@ -41,7 +41,7 @@ const HeroSection = () => {
       </p>
 
       {/* Social Media and Contact Links */}
-      <div className="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0 mb-6">
+      <div className="flex flex-row gap-4 items-center md:space-x-6  md:space-y-0 mb-6">
         {/* Phone Number */}
         <a
           href="tel:+919731877132"
