@@ -4,7 +4,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 p-4">
+    <nav
+      className="bg-gray-900 p-4 fixed top-0 right-0 left-0 z-50
+    "
+    >
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white font-bold text-2xl">
           <a href="#">MyPortfolio</a>

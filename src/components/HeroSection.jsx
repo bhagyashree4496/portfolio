@@ -40,34 +40,27 @@ const HeroSection = () => {
         bringing ideas to life through code.
       </p>
 
-      {/* Social Media and Contact Links */}
       <div className="flex flex-row gap-4 items-center md:space-x-6  md:space-y-0 mb-6">
-        {/* Phone Number */}
         <a
           href="tel:+919731877132"
           className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
         >
           <FiPhoneCall size={24} />
-          {/* <span>+919731877132</span> */}
         </a>
 
-        {/* Email */}
         <a
           href="mailto:bhagyashree4496@gmail.com"
           className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
         >
           <AiOutlineMail size={24} />
-          {/* <span>bhagyashree4496@gmail.com</span> */}
         </a>
 
-        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/bhagyashreepatil4496/"
           target="_blank"
           className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
         >
           <AiFillLinkedin size={24} />
-          {/* <span>/bhagyashreepatil4496/</span> */}
         </a>
       </div>
 
