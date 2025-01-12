@@ -2,6 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
+import { FaGithub } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
@@ -61,6 +62,13 @@ const HeroSection = () => {
           className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
         >
           <AiFillLinkedin size={24} />
+        </a>
+        <a
+          href="https://github.com/bhagyashree4496"
+          target="_blank"
+          className="flex items-center space-x-2 text-gray-400 hover:text-indigo-400 transition duration-300"
+        >
+          <FaGithub size={24} />
         </a>
       </div>
 

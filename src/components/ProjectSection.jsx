@@ -8,10 +8,18 @@ import todo from "../assets/todo.PNG";
 import shop from "../assets/1.PNG";
 import Doc from "../assets/doc.PNG";
 import planit from "../assets/plan.PNG";
+import { FaGithub } from "react-icons/fa6";
 // Project Card Component
-const ProjectCard = ({ image, title, description, link, technologies }) => {
+const ProjectCard = ({
+  image,
+  title,
+  description,
+  link,
+  technologies,
+  git,
+}) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden mx-auto">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden mx-auto flex flex-col">
       <img className="w-full h-48 object-cover " src={image} alt={title} />
       <div className="p-6 flex flex-col justify-between items-center">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -26,14 +34,24 @@ const ProjectCard = ({ image, title, description, link, technologies }) => {
             </span>
           ))}
         </div>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-700 inline-flex items-center"
-        >
-          View Project <FaExternalLinkAlt className="ml-1" />
-        </a>
+        <div className="flex items-center gap-5">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700 inline-flex items-center"
+          >
+            <span> View Project</span> <FaExternalLinkAlt className="ml-1" />
+          </a>
+          <a
+            href={git}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700 inline-flex items-center"
+          >
+            <span> Source code</span> <FaGithub className="ml-1" />
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -48,6 +66,7 @@ const ProjectsSection = () => {
         "ShopSphere is a scalable e-commerce platform built with the MERN stack, featuring secure user authentication, product management, and payment processing for a seamless shopping experience.",
       image: shop, // Replace with actual project image link
       link: "https://shopsphere-bp.vercel.app/",
+      git: "https://github.com/bhagyashree4496/shopsphere",
       technologies: ["React", "NodeJs", "MongoDB", "Tailwind CSS"],
     },
     {
@@ -55,8 +74,9 @@ const ProjectsSection = () => {
       description:
         "DocAI for Medical Questions uses ChatGPT AI to provide accurate, real-time answers to medical queries by analyzing and interpreting medical documents, helping users access reliable health information with ease",
       image: Doc, // Replace with actual project image link
-      link: "https://docai-taupe.vercel.app/",
+      link: "https://github.com/bhagyashree4496/docai",
       technologies: ["React", "Tailwind CSS", "ChatGPT API"],
+      git: "",
     },
     {
       title: "Planit",
@@ -65,6 +85,7 @@ const ProjectsSection = () => {
       image: planit, // Replace with actual project image link
       link: "https://planit-a4zc.vercel.app/",
       technologies: ["React", "NodeJs", "MongoDB", "Tailwind CSS"],
+      git: "https://github.com/bhagyashree4496/Planit",
     },
     {
       title: "Levora About",
@@ -73,6 +94,7 @@ const ProjectsSection = () => {
       image: levora, // Replace with actual project image link
       link: "https://levoraabout-bhagya.netlify.app/",
       technologies: ["ReactJs", "TailwindCSS", "Framer Motion"],
+      git: "https://github.com/bhagyashree4496/levoraAbout",
     },
     {
       title: "Youtube Clone",
@@ -81,6 +103,7 @@ const ProjectsSection = () => {
       image: youtube, // Replace with actual project image link
       link: "https://youtubeclonebp.netlify.app/",
       technologies: ["ReactJs", "TailwindCSS", "React Player"],
+      git: "https://github.com/bhagyashree4496/youtube_clone",
     },
 
     {
@@ -90,6 +113,7 @@ const ProjectsSection = () => {
       image: travel, // Replace with actual project image link
       link: "https://travel-advisor-bp.netlify.app/",
       technologies: ["ReactJs", "TailwindCSS", "MaterialUI"],
+      git: "https://github.com/bhagyashree4496/Travel-Advisor",
     },
     {
       title: "ToDo App",
@@ -98,6 +122,7 @@ const ProjectsSection = () => {
       image: todo, // Replace with actual project image link
       link: "https://todocrudbp.netlify.app/",
       technologies: ["ReactJs", "TailwindCSS", "Render"],
+      git: "https://github.com/bhagyashree4496/todo_json_server",
     },
     {
       title: "Ecommerce UI",
@@ -106,6 +131,7 @@ const ProjectsSection = () => {
       image: plant, // Replace with actual project image link
       link: "https://plantmarket-bp.netlify.app/",
       technologies: ["React", "Tailwind CSS", "JavaScript"],
+      git: "https://github.com/bhagyashree4496/Ecommerce",
     },
     // Add more projects as needed
   ];
@@ -127,6 +153,7 @@ const ProjectsSection = () => {
               description={project.description}
               link={project.link}
               technologies={project.technologies}
+              git={project.git}
             />
           ))}
         </div>
