@@ -5,6 +5,7 @@ import {
   SiTailwindcss,
   SiMongodb,
   SiExpress,
+  SiMaterialdesign,
 } from "react-icons/si";
 import MaterialIcon from "@mui/icons-material/DeveloperMode"; // Example Material UI Icon
 
@@ -59,7 +60,7 @@ const SkillsSection = () => {
 
           {/* Material UI Icon */}
           <div className="text-xl flex flex-col items-center md:text-6xl text-indigo-600">
-            <MaterialIcon />
+            <SiMaterialdesign />
             <p className="mt-2 text-sm">Material UI</p>
           </div>
         </div>
