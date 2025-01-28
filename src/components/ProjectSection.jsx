@@ -8,6 +8,7 @@ import todo from "../assets/todo.PNG";
 import shop from "../assets/1.PNG";
 import Doc from "../assets/doc.PNG";
 import planit from "../assets/plan.PNG";
+import chat from "../assets/chat.PNG";
 import { FaGithub } from "react-icons/fa6";
 // Project Card Component
 const ProjectCard = ({
@@ -68,6 +69,16 @@ const ProjectsSection = () => {
       link: "https://shopsphere-bp.vercel.app/",
       git: "https://github.com/bhagyashree4496/shopsphere",
       technologies: ["React", "NodeJs", "MongoDB", "Tailwind CSS"],
+    },
+
+    {
+      title: "Chirp",
+      description:
+        " Chirp: A real-time chat application powered by the MERN stack and Socket.IO. Chirp allows users to engage in private and group chats with instant messaging, live notifications, and a sleek, responsive design. With secure authentication and smooth performance, Chirp is built for seamless communication.",
+      image: chat, // Replace with actual project image link
+      link: "https://chirp-dpgg.vercel.app/",
+      technologies: ["React", "NodeJs", "MongoDB", "socket.io", "Tailwind CSS"],
+      git: "https://github.com/bhagyashree4496/Chirp",
     },
     {
       title: "DocAi",
